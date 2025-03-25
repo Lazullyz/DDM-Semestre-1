@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    list-style:none;
+    border:0
+}
+
+body{
+    background-color: #E8E8E8;
+}
+
+/* Cabeçalho */
+
+.menu{
+    font-family: poppins, cursive;
+    background-color: #676260;
+    color: white;
+    padding: 20px 20px 20px 60px;
+}
+
+.nome{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Introdução */
+
+/* Conteudo */
+
+.exp{
+    background-color: rgba(219, 215, 213, 0.66);
+    font-family: poppins, cursive;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.25rem;
+    padding: 50px 0px 50px 0px;
+}
+
+.desc{
+    width: 45vw;
+    margin: auto;
+}
+
+.sobre{
+    padding: 10px;
+    width: 65vw;
+    margin: auto;
+}
+
+/* Testes */
+
+.ter{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fundo{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 540px;
+    height: 310px;
+    background-color: gray;
+}
