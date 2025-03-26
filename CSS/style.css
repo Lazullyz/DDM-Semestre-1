@@ -8,9 +8,10 @@
     border:0
 }
 
-body{
+body, html{
     background-color: #E8E8E8;
     font-family: poppins, cursive;
+    scroll-behavior: smooth;
 }
 
 /* Cabeçalho */
@@ -24,27 +25,65 @@ body{
 .nome{
     font-size: 2rem;
     font-weight: 500;
+    color: white;
 }
 
 /* Introdução */
 
-.intro{
-    background-color: #9e9e9e;
+.intro {
+    position: relative;
     width: 100%;
     height: 93vh;
+    display: flex;
+    align-items: center;
 }
 
-.contain{
-    background-color: #b4a49d;
-    color: white;
-    text-align: center;
-    justify-content: flex-end;
-    align-items: end;
+.intro::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+
+.intro-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contain {
+    text-align: left;
+    background-color: rgba(133, 128, 126, 0.47);
+    padding: 20px 60px;
+    width: 100%;
+    margin-top: 400px;
+    z-index: 1;
+}
+
+
+.entert{
+    text-align: left;
+    background-color: rgba(133, 128, 126, 0.47);
+    padding: 20px 60px;
+    width: 100%;
+    margin-bottom: 300px;
+    z-index: 1;
 }
 
 h1{
+    color: white;
     font-size: 3rem;
     font-weight: 600;
+}
+
+.subtit_maior{
+    color: white;
+}
+.subtit_menor {
+    color: white;
+    padding-left: 30px;
 }
 
 /* Conteudo */
@@ -183,13 +222,21 @@ footer{
     font-size: 1.25rem;
     font-weight: 400;
 }
+
 /* Media Queries */
 
 @media (max-width: 1300px) {
+    /* Cabeçalho */
     .nome{
         font-size: 1.75rem;
     }
 
+    /* Introdução */
+    h1{
+        font-size: 2.5rem;
+    }
+
+    /* Conteudo */
     .exp{
         font-size: 1rem;
     }
@@ -199,23 +246,26 @@ footer{
         font-weight: 700;
     }
 
-    .redi{
-        font-size: 1.25rem;
-        font-weight: 500;
-    }
-    
+    /* Conexão */
     .box-con{
         gap: 20px;
         grid-template-columns: 1fr;
     }
-
+    
     .connect{
         width: 60vw;
         height: 260px;
         margin-top: 10px;
         margin-bottom: 10px;
     }    
+    
+    /* Serviços */
+    .redi{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
 
+    /* Rodapé */
     .control{
         grid-template-columns: 1fr 1fr;
         gap: 100px;
@@ -226,18 +276,27 @@ footer{
   }
 
 @media (max-width: 780px) {
+    /* Cabeçalho */
     .nome{
         font-size: 1.5rem;
     }
 
+    /* Introdução */
+    h1{
+        font-size: 2.25rem;
+    }
+    
+    .subtit_maior, .subtit_menor{
+        font-size: 0.90rem;
+        padding-left: 0px;
+    }
+
+    /* Conteudo */
     .tit{
         font-size: 2.1rem;
     }
 
-    .redi{
-        font-size: 1rem;
-    }
-
+    /* Conexão */
     .box-con{
         gap: 20px;
     }
@@ -246,6 +305,12 @@ footer{
         width: 80vw;
     }
 
+    /* Serviços */
+    .redi{
+        font-size: 1rem;
+    }
+
+    /* Rodapé */
     .control{
         grid-template-columns: 1fr;
         padding: 40px;
