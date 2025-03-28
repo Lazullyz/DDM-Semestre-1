@@ -60,6 +60,7 @@ body, html{
     width: 100%;
     margin-top: 400px;
     z-index: 1;
+    
 }
 
 
@@ -94,6 +95,7 @@ h1{
     margin-top: 30px;
     font-size: 1.25rem;
     padding: 50px 0px 50px 0px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .desc{
@@ -113,6 +115,7 @@ h1{
     background-color: rgba(219, 215, 213, 0.66);
     margin-top: 30px;
     padding-bottom: 60px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .tit{
@@ -140,6 +143,7 @@ h1{
     display: flex;
     justify-content: flex-end;
     align-items: end;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
 }
 
@@ -196,6 +200,35 @@ h1{
     background-image: url(../IMG/drugs.jpg);
 }
 
+/* Caixa de informações */
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.caixa-bem {
+    background-color: rgba(219, 215, 213, 0.66);
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.titulo-bem {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+.caixa-bem p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
 /* Rodapé */
 
 footer{
@@ -225,7 +258,7 @@ footer{
 
 /* Media Queries */
 
-@media (max-width: 1300px) {
+@media (max-width: 1365px) {
     /* Cabeçalho */
     .nome{
         font-size: 1.75rem;
@@ -308,6 +341,12 @@ footer{
     /* Serviços */
     .redi{
         font-size: 1rem;
+    }
+
+    /* Caixa de informações */
+
+    .info {
+        grid-template-columns: 1fr;
     }
 
     /* Rodapé */
