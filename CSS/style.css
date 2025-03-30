@@ -373,6 +373,60 @@ h1{
     margin-bottom: 15px;
 }
 
+/* Cursos Grid*/
+
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 30px;
+}
+
+.active {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px 5%;
+}
+
+.active-sub {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+
+.cursos-box {
+    background-color: rgba(219, 215, 213, 0.66);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cursos-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cursos-img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cursos-cont {
+    padding: 25px;
+}
+
+.cursos-cont ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.cursos-box p {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+
 /* Rodapé */
 
 footer{
@@ -524,6 +578,17 @@ footer{
         height: 100px;
     }
 
+    /* Cursos Grid*/
+    
+    .cursos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .cursos-img {
+        height: 100px;
+    }
+
     /* Rodapé */
     .control{
         grid-template-columns: 1fr;
@@ -553,6 +618,22 @@ footer{
     }
     
     .projetos-img {
+        height: 100px;
+    }
+
+    .active {
+        padding: 0px;
+    }
+    
+    .cursos-cont {
+        padding: 20px;
+    }
+    
+    .active-sub {
+        font-size: 1.1rem;
+    }
+    
+    .cursos-img {
         height: 100px;
     }
 }
