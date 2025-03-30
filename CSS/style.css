@@ -96,7 +96,7 @@ h1{
     justify-content: center;
     text-align: center;
     padding: 30px;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     word-wrap: break-word;
 }
 
@@ -115,7 +115,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 50px 10px 50px 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -136,7 +136,7 @@ h1{
     background-color: rgba(219, 215, 213, 0.66);
     text-align: center;
     margin-top: 30px;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 50px 0px 50px 0px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -274,6 +274,51 @@ h1{
     margin-bottom: 15px;
     line-height: 1.5;
 }
+
+/* Apoio Familia */
+
+.sup {
+    font-size: 1.45em;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.apoios {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.assit-past {
+    padding-left: 20px;
+}
+
+.assit-past li {
+    margin-bottom: 10px;
+}
+
+.box-offer {
+    background-color: rgba(219, 215, 213, 0.66);
+    padding: 50px 5%;
+    margin: 0 auto;
+    border-radius: 15px;
+    max-width: 1200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.column-al {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.colunas {
+    flex: 1;
+    min-width: 300px;
+}
+
 /* Rodapé */
 
 footer{
@@ -397,6 +442,16 @@ footer{
 
     .info {
         grid-template-columns: 1fr;
+    }
+
+    /* Apoio Familia */
+    
+    .column-al {
+        flex-direction: column;
+    }
+    
+    .colunas {
+        min-width: 100%;
     }
 
     /* Rodapé */
